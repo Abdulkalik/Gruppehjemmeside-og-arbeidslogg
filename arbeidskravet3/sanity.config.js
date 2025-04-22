@@ -1,16 +1,11 @@
-import {defineConfig} from 'sanity'
-import {structureTool} from 'sanity/structure'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemaTypes'
+import { defineConfig } from 'sanity'
+import { schemaTypes } from './schemaTypes' // NOT from src/
 
 export default defineConfig({
   name: 'default',
-  title: 'Arbeidskravet3',
-
+  title: 'arbeidskravet3',
   projectId: 'gctndu6d',
   dataset: 'arbeidskravet3',
-
-  plugins: [structureTool(), visionTool()],
 
   schema: {
     types: schemaTypes,

@@ -1,1 +1,4 @@
-export const schemaTypes = []
+import medlem from './medlem'
+
+
+export const schemaTypes = [medlem]
