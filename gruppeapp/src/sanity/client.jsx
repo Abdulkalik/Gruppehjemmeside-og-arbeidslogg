@@ -1,10 +1,10 @@
-// src/sanity/client.js
-import { createClient } from 'sanity';
+import { createClient } from '@sanity/client'
 
 const client = createClient({
-  projectId: 'your_project_id', // Replace with your Sanity project ID
-  dataset: 'your_dataset', // Replace with your Sanity dataset name
+  projectId: 'gctndu6d', // your projectId
+  dataset: 'arbeidskravet3',
   useCdn: true,
-});
+  apiVersion: '2023-01-01',
+})
 
-export default client;
+export default client
